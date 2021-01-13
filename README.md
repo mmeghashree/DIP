@@ -118,6 +118,7 @@ c.waitKey(0)
 
 **Output:
 
+![image](https://user-images.githubusercontent.com/72377303/104424762-a5028c00-5534-11eb-884f-0896bf097b2d.png)
 
 
 
