@@ -225,4 +225,4 @@ print ("Summed neighbors matrix:\n", N)
 
 **Output:
 
-
+![image](https://user-images.githubusercontent.com/72377303/104438861-56a9b900-5545-11eb-95a0-9a35933af0e4.png)
