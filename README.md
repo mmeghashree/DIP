@@ -103,6 +103,8 @@ cv2.destroyAllWindows()
 
 **Output:
 
+![image](https://user-images.githubusercontent.com/72377303/104425012-fd398e00-5534-11eb-8c40-0ba6cc50b18c.png)
+
 **6)Develop  a program to create an image from 2D array.
 
 import numpy as np
