@@ -86,6 +86,8 @@ cv2.destroyAllWindows()
 
 **Output:
 
+![image](https://user-images.githubusercontent.com/72377303/104425173-3245e080-5535-11eb-94e9-936a3b05562e.png)
+
 **5)Develop a program to convert given color image to color space.
 
 import cv2
