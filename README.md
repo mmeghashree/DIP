@@ -16,8 +16,6 @@ cv2.destroyAllWindows()
 
 ![image](https://user-images.githubusercontent.com/72377303/104425653-ca43ca00-5535-11eb-9cc2-777c38e412ef.png)
 
-
-
 **2)Develop a program to perform linear transformation on an image.
      a)Scaling
      b)Rotating
@@ -41,6 +39,7 @@ except IOError:
     
 **Output: 
 
+![image](https://user-images.githubusercontent.com/72377303/104425905-13941980-5536-11eb-8bb5-f5acc2883fe7.png)
 
 **b) Rotating:
 
