@@ -55,6 +55,8 @@ cv2.waitKey(0)
 
 **Output:
 
+![image](https://user-images.githubusercontent.com/72377303/104426122-5fdf5980-5536-11eb-8254-26b81202d6f8.png)
+
 **3)Develop a program to find the sum of mean of set of images.
 
 import cv2
