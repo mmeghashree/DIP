@@ -82,6 +82,7 @@ cv2.waitKey(0)
 
 **Output:
 
+![image](https://user-images.githubusercontent.com/72377303/104428061-d8dfb080-5538-11eb-94a8-42d0231a7cc3.png)
 
 **4)Develop  a program to convert a color image to gray scale and binary.
 
