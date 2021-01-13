@@ -116,6 +116,9 @@ img.save('img.png')
 img.show()
 c.waitKey(0)
 
+**Output:
+
+
 
 
 
