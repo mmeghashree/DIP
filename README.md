@@ -14,6 +14,9 @@ cv2.destroyAllWindows()
 
 **Output:
 
+![image](https://user-images.githubusercontent.com/72377303/104425402-7f29b700-5535-11eb-9d2c-410cf9c64d52.png)
+
+
 **2)Develop a program to perform linear transformation on an image.
      a)Scaling
      b)Rotating
