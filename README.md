@@ -57,26 +57,31 @@ cv2.waitKey(0)
 
 ![image](https://user-images.githubusercontent.com/72377303/104426122-5fdf5980-5536-11eb-8254-26b81202d6f8.png)
 
-**3)Develop a program to find the sum of mean of set of images.
+**3. Develop a program to find sum and mean of a set of images.
+Create n number of images and read the directory and perform operation.
 
 import cv2
 import os
-path="E:\images"
-images=[]
-dirs=os.listdir(path)
-for file in dirs:
-    fpath=path+"\\"+file
-    images.append(cv2.imread(fpath))
-    i=0
-for im in images:
-    cv2.imshow(dirs[i],images[i])
+path = 'C:\Pictures'
+imgs = []
+
+files = os.listdir(path)
+for file in files:
+    filepath=path+"\\"+file
+    imgs.append(cv2.imread(filepath))
+i=0
+im = []
+for im in imgs:
+    #cv2.imshow(files[i],imgs[i])
+    im+=imgs[i]
     i=i+1
-print(i) 
-cv2.imshow('sum',len(im))
-cv2.imshow('mean',len(im)/im)
-cv2.waitKey()
+cv2.imshow("sum of four pictures",im)
+meanImg = im/len(files)
+cv2.imshow("mean of four pictures",meanImg)
+cv2.waitKey(0)
 
 **Output:
+
 
 **4)Develop  a program to convert a color image to gray scale and binary.
 
