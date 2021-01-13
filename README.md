@@ -39,7 +39,8 @@ except IOError:
     cv2.waitKey(0)
     cv2.destroyAllWindows(0)
     
-**Output:    
+**Output: 
+
 
 **b) Rotating:
 
