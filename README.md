@@ -62,7 +62,7 @@ Create n number of images and read the directory and perform operation.
 
 import cv2
 import os
-path = 'C:\Pictures'
+path = 'E:\photos'
 imgs = []
 
 files = os.listdir(path)
