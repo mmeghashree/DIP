@@ -231,6 +231,8 @@ print ("Summed neighbors matrix:\n", N)
 
 **8)Program for operator overloading.
 
+**Description:
+In C++, we can make operators to work for user defined classes. This means C++ has the ability to provide the operators with a special meaning for a data type, this ability is known as operator overloading.
 **Program:
 
 #include <iostream>
