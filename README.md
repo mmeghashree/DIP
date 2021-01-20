@@ -189,7 +189,8 @@ img.show()
 c.waitKey(0)
 
 **numpy.zeros()->function returns a new array of given shape and type, with zeros.
-Image.fromarray(array)->this is used to create image object of above array
+Image.fromarray(array)->this is used to create image object of above array.
+unit8->is an unsigned 8-bit integer that can represent values 0-255.
 
 **Output:
 
@@ -198,7 +199,8 @@ Image.fromarray(array)->this is used to create image object of above array
 **7)Program to find the of neighbourhood values of matrix.
 
 **Discription:
-
+An array of (i,j) where i indicates row and j indicates column.
+For every given cell index (i,j),findind sum of all matrix elements except the elements present in the i'th row and/or j'th column.
 **Program:
 
 import numpy as np
@@ -226,3 +228,135 @@ print ("Summed neighbors matrix:\n", N)
 **Output:
 
 ![image](https://user-images.githubusercontent.com/72377303/104438861-56a9b900-5545-11eb-95a0-9a35933af0e4.png)
+
+**8)Program for operator overloading.
+
+**Program:
+
+#include <iostream>
+using namespace std;
+class matrix
+{
+ int r1, c1, i, j, a1;
+ int a[10][10];
+public:int get()
+ {
+  cout << "Enter the row and column size for the  matrix\n";
+  cin >> r1;
+  cin >> c1;
+   cout << "Enter the elements of the matrix\n";
+  for (i = 0; i < r1; i++)
+  {
+   for (j = 0; j < c1; j++)
+   {
+    cin>>a[i][j];
+   }
+  }
+ };
+ void operator+(matrix a1)
+ {
+ int c[i][j];
+   for (i = 0; i < r1; i++)
+   {
+    for (j = 0; j < c1; j++)
+    {
+     c[i][j] = a[i][j] + a1.a[i][j];
+    }
+  }
+  cout<<"addition is\n";
+  for(i=0;i<r1;i++)
+  {
+   cout<<" ";
+   for (j = 0; j < c1; j++)
+   {
+    cout<<c[i][j]<<"\t";
+   }
+   cout<<"\n";
+  }
+ };
+  void operator-(matrix a2)
+ {
+ int c[i][j];
+   for (i = 0; i < r1; i++)
+   {
+    for (j = 0; j < c1; j++)
+    {
+     c[i][j] = a[i][j] - a2.a[i][j];
+    }   
+  }
+  cout<<"subtraction is\n";
+  for(i=0;i<r1;i++)
+  {
+   cout<<" ";
+   for (j = 0; j < c1; j++)
+   {
+    cout<<c[i][j]<<"\t";
+   }
+   cout<<"\n";
+  }
+ };
+ void operator*(matrix a3)
+ {
+  int c[i][j];
+  for (i = 0; i < r1; i++)
+  {
+   for (j = 0; j < c1; j++)
+   {
+    c[i][j] =0;
+    for (int k = 0; k < r1; k++)
+    {
+     c[i][j] += a[i][k] * (a3.a[k][j]);
+    }
+  }
+  }
+  cout << "multiplication is\n";
+  for (i = 0; i < r1; i++)
+  {
+   cout << " ";
+   for (j = 0; j < c1; j++)
+   {
+    cout << c[i][j] << "\t";
+   }
+   cout << "\n";
+  }
+ };
+};
+int main()
+{
+ matrix p,q;
+ p.get();
+ q.get();
+ p + q;
+ p - q;
+ p * q;
+return 0;
+}
+
+**Output:
+Enter the row and column size for the  matrix
+2
+2
+Enter the elements of the matrix
+6
+7
+5
+8
+Enter the row and column size for the  matrix
+2
+2
+Enter the elements of the matrix
+2
+3
+1
+4
+addition is
+ 8      10
+ 6      12
+subtraction is
+ 4      4
+ 4      4
+multiplication is
+ 19     46
+ 18     47
+
+
