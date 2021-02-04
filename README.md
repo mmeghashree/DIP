@@ -8,7 +8,6 @@ Importance of grayscaling :
 Reduces model complexity: Consider training neural article on RGB images of 10x10x3 pixel.The input layer will have 300 input nodes. On the other hand, the same neural network will need only 100 input node for grayscaled images.
 For other algorithms to work: There are many algorithms that are customized to work only on grayscaled images e.g. Canny edge detection function pre-implemented in OpenCV library works on Grayscaled images only.
 ```python
-**Program:
 
 import cv2
 image=cv2.imread('image2.jpg')
