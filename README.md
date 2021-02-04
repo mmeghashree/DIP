@@ -36,7 +36,7 @@ cv2.imwrite()->method is used to save an image to any storage device. This will 
 Scaling:Image resizing refers to the scaling of images. Scaling comes handy in many image processing as well as machine learning applications. It helps in reducing the number of pixels from an image 
 Rotation:Image rotation is a common image processing routine used to rotate images at any desired angle. This helps in image reversal, flipping, and obtaining an intended view of the image. Image rotation has applications in matching, alignment, and other image-based algorithms. OpenCV is a well-known library used for image processing.
 ```python
-**Program:
+
 a) Scaling:
 
 import cv2
@@ -61,7 +61,7 @@ imshow()->function in pyplot module of matplotlib library is used to display dat
 
 ![image](https://user-images.githubusercontent.com/72377303/104425905-13941980-5536-11eb-8bb5-f5acc2883fe7.png)
 ```python
-**Progarm:
+
 b) Rotating:
 
 import cv2
@@ -88,7 +88,6 @@ Create n number of images and read the directory and perform operation.
 Sum:You can add two images with the OpenCV function, cv. add(), or simply by the numpy operation res = img1 + img2.
 Mean:The function mean calculates the mean value M of array elements, independently for each channel, and return it:" This mean it should return you a scalar for each layer of you image
 ```python
-**Program:
 
 import cv2
 import os
@@ -122,7 +121,7 @@ listdir() method in python is used to get the list of all files and directories 
 Grayscale image:Grayscaling is the process of converting an image from other color spaces e.g RGB, CMYK, HSV, etc. to shades of gray. It varies between complete black and complete white.
 Binary image:A binary image is a monochromatic image that consists of pixels that can have one of exactly two colors, usually black and white.
 ```python
-**Program
+
 import cv2 
 originalImage = cv2.imread('d2.jpg')
 grayImage = cv2.cvtColor(originalImage, cv2.COLOR_BGR2GRAY)
@@ -149,7 +148,6 @@ HSV color space: It stores color information in a cylindrical representation of 
 HLS color space:The HSL color space, also called HLS or HSI, stands for:Hue : the color type Ranges from 0 to 360° in most applications 
 YUV color space:Y refers to the luminance or intensity, and U/V channels represent color information. This works well in many applications because the human visual system perceives intensity information very differently from color information.
 ```python
-**Program:
 
 import cv2
 img=cv2.imread('d6.jpg')
@@ -175,7 +173,6 @@ cv2.destroyAllWindows()
 **Discription:
 Two dimensional array:2D array can be defined as an array of arrays. The 2D array is organized as matrices which can be represented as the collection of rows and columns. However, 2D arrays are created to implement a relational database look alike data structure.
 ```python
-**Program:
 
 import numpy as np
 from PIL import Image
@@ -202,7 +199,6 @@ unit8->is an unsigned 8-bit integer that can represent values 0-255.
 An array of (i,j) where i indicates row and j indicates column.
 For every given cell index (i,j),findind sum of all matrix elements except the elements present in the i'th row and/or j'th column.
 ```python
-**Program:
 
 import numpy as np
 M = [[1, 2, 3],
@@ -235,7 +231,6 @@ print ("Summed neighbors matrix:\n", N)
 **Description:
 In C++, we can make operators to work for user defined classes. This means C++ has the ability to provide the operators with a special meaning for a data type, this ability is known as operator overloading.
 ```python
-**Program:
 
 #include <iostream>
 using namespace std;
@@ -365,7 +360,6 @@ multiplication is
 
 **9)Find the neighbourhood values of the matrix.
 ```python
-**Program:
 
 import numpy as np
 ini_array = np.array([[1, 2,5, 3], [4,5, 4, 7], [9, 6, 1,0]])
